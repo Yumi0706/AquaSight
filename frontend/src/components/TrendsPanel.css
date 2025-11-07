@@ -1,0 +1,17 @@
+.trends-panel {
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+.chart-wrapper {
+  margin-top: 10px;
+  height: 220px;
+}
+
+.trends-panel h4 {
+  margin: 0;
+  font-weight: 600;
+}

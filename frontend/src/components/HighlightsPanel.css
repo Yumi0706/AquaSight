@@ -1,0 +1,106 @@
+.highlights-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.metric-card {
+  flex: 1;
+  min-width: 220px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.55);
+}
+
+.metric-title {
+  font-size: 13px;
+  color: #9aa0b4;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.metric-large {
+  font-size: 28px;
+  font-weight: 700;
+  color: #edf2ff;
+  margin: 6px 0;
+}
+
+.metric-sub {
+  font-size: 12px;
+  color: #9aa0b4;
+}
+
+.metric-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.status-stat {
+  flex: 1;
+  padding: 10px 8px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.status-stat.green {
+  background: rgba(42, 157, 143, 0.15);
+  color: #6ee7b7;
+}
+
+.status-stat.yellow {
+  background: rgba(255, 183, 0, 0.15);
+  color: #ffb703;
+}
+
+.status-stat.red {
+  background: rgba(230, 57, 70, 0.15);
+  color: #ef4444;
+}
+
+.stat-num {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #9aa0b4;
+  margin-top: 3px;
+}
+
+/* Gauge style */
+.risk-gauge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gauge-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  background: linear-gradient(90deg, #f97316, #f43f5e);
+  height: 100%;
+  width: 50%; /* dynamically set inline via React */
+  border-radius: 999px;
+  transition: width 0.6s ease-in-out;
+}

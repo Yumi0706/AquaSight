@@ -1,0 +1,32 @@
+/* src/components/Notifications.css */
+.notifications-panel {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 240px; /* avoid jump */
+  max-height: 520px;
+  overflow: auto;
+}
+
+/* ensure the list has stable spacing so incoming items don't reflow drastically */
+.notifications-list { display: flex; flex-direction: column; gap: 12px; }
+
+.notification-item {
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(255,255,255,0.02));
+}
+
+.notification-item .muted { color: #9aa0b4; font-size: 12px; margin-top: 2px; }
+
+.notification-item.red { border-left: 4px solid #e63946; }
+.notification-item.yellow { border-left: 4px solid #ffb703; color: #111; }
+.notification-item.green { border-left: 4px solid #2a9d8f; color: #eafaf1; }
+
+.notification-top { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; }
+.dismiss-btn { background: transparent; border: none; color: #9aa0b4; cursor: pointer; font-size: 14px; }
+.notification-body { margin-top: 8px; color: #e9eefb; font-size: 13px; }
+
+.empty-state { padding: 12px; color: #9aa0b4; }
+

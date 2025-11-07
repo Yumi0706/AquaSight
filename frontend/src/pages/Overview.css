@@ -1,0 +1,19 @@
+/* Overview page styling */
+.overview {
+  padding: 20px;
+}
+
+.overview h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.overview .card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
